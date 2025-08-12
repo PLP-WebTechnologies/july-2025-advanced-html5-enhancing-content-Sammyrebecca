@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced HTML5 Form Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: auto;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Hobby Showcase</h1>
+        <p>Exploring lists, tables, media, and forms in HTML5.</p>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>My Favorite Hobbies</h2>
+            <ul>
+                <li>Doing yoga</li>
+                <li>Traveling</li>
+                <li>Watching movies</li>
+            </ul>
+            <h3>Steps for Making Pasta</h3>
+            <ol>
+                <li>Boil water and add salt.</li>
+                <li>Add pasta and cook for 8–10 minutes.</li>
+                <li>Drain water and add sauce.</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Weekly Activity Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activity</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Doing yoga</td>
+                        <td>2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Watching movies</td>
+                        <td>1.5 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Coding</td>
+                        <td>3 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Media Gallery</h2>
+            <figure>
+                <img src="becc photo.jpg" alt="Sample Photo" width="50%">
+                <figcaption>My latest photo.</figcaption>
+            </figure>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="100%">
+                <source src="https://videos.pexels.com/video-files/992694/992694-hd_1920_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section>
+            <h2>Contact & Feedback Form</h2>
+            <form action="#" method="post">
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="hobby">Favorite Hobby:</label>
+                    <select id="hobby" name="hobby" required>
+                        <option value="">--Select--</option>
+                        <option value="photography">Photography</option>
+                        <option value="traveling">Traveling</option>
+                        <option value="cooking">Cooking</option>
+                    </select>
+                    <label>Subscribe to newsletter?</label>
+                    <input type="radio" id="yes" name="subscribe" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="subscribe" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <!-- Feedback -->
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="comments">Your Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..." required></textarea>
+                     <label for="rating">Rate our page (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </fieldset>
+
+                <!-- Submission -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rebecca Sammy | Designed with HTML5</p>
+    </footer>
+</body>
+</html>
